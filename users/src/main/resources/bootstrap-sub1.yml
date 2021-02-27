@@ -1,0 +1,13 @@
+server:
+  port: 8050
+
+spring:
+  profile: sub1
+
+eureka:
+  instance:
+    instance-id: instusers001
+  client:
+    service-url:
+      defaultZone: http://localhost:6080/eureka/
+

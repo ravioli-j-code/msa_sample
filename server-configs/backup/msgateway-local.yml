@@ -1,0 +1,4 @@
+# msgateway-service-local.yml  
+content:
+  identity: gateway
+  message : This is Gateway Server

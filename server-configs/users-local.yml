@@ -1,0 +1,3 @@
+users:
+  identity: users
+  message: This is Users Service Configuration.

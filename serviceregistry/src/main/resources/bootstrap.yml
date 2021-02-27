@@ -1,0 +1,29 @@
+server:
+  port: 6080
+
+spring:
+  profiles:
+    active: native
+  application:
+    name : serviceregistry
+  config:
+    use-legacy-processing: true
+  cloud:
+    config:
+      uri: http://localhost:9011
+      fail-fast: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: info, refresh
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/

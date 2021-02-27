@@ -1,0 +1,3 @@
+gateway:
+  identity: gateway
+  message: This is gateway configuration.

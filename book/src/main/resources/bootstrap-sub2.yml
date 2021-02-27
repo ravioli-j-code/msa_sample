@@ -1,0 +1,13 @@
+server:
+  port: 8082
+
+spring:
+  profile: sub2
+
+
+eureka:
+  instance:
+    instance-id: instbook002
+  client:
+    service-url:
+      defaultZone: http://localhost:6080/eureka/

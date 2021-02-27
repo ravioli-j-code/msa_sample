@@ -1,0 +1,19 @@
+spring:
+  profiles:
+    active: sub1
+  application:
+    name : users
+  config:
+    use-legacy-processing: true
+  cloud:
+    config:
+      uri: http://localhost:9011
+      fail-fast: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: info, refresh
+
+debug: true

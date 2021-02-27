@@ -1,0 +1,3 @@
+serviceregistry:
+  identity: serviceregistry
+  message: This is service registry configuration.
